@@ -51,7 +51,7 @@ function FloatingPaths({ position }: { position: number }) {
 }
 
 export function BackgroundPaths({
-    title = "Wallink",
+    title = "Wallink App",
 }: {
     title?: string;
 }) {
