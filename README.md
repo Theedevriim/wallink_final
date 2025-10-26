@@ -49,6 +49,41 @@ cp .env.example .env.local
 npm run dev
 ```
 
+## 🌐 Deploy (Production)
+
+### Backend Deploy (Render)
+
+1. **Repository'yi GitHub'a push edin**
+2. **Render.com'da yeni Web Service oluşturun**
+3. **GitHub repository'yi bağlayın**
+4. **Build & Deploy ayarları:**
+   ```
+   Build Command: npm install
+   Start Command: npm start
+   ```
+5. **Environment Variables ekleyin:**
+   ```
+   SUI_NETWORK=testnet
+   SUI_RPC_URL=https://fullnode.testnet.sui.io:443
+   PRIVATE_KEY=your_sui_private_key_here
+   WALLET_ADDRESS=your_sui_wallet_address_here
+   LINKTREE_PACKAGE_ID=your_package_id_here
+   LINKTREE_MODULE_NAME=linktree_nft
+   DEFAULT_GAS_BUDGET=50000000
+   NODE_ENV=production
+   ALLOWED_ORIGINS=https://your-frontend-domain.com
+   ```
+
+### Frontend Deploy (Vercel/Netlify)
+
+1. **ui/ klasörünü ayrı repository olarak deploy edin**
+2. **Environment Variables:**
+   ```
+   VITE_ENOKI_API_KEY=your_enoki_api_key_here
+   VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
+   VITE_REDIRECT_URI=https://your-domain.com
+   ```
+
 ## ⚙️ Yapılandırma
 
 ### Backend (.env)
