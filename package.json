@@ -5,7 +5,7 @@
   "scripts": {
     "start": "node backend/src/server.js",
     "dev": "nodemon backend/src/server.js",
-    "build": "echo 'No build step needed for backend'",
+    "build": "npm install",
     "install-backend": "cd backend && npm install",
     "install-ui": "cd ui && npm install"
   },
