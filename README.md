@@ -5,7 +5,7 @@ Modern bir Linktree alternatifi, Sui blockchain ve zkLogin entegrasyonu ile.
 ## 🚀 Özellikler
 
 - **zkLogin Entegrasyonu**: Google ile giriş yapma
-- **Sui Blockchain**: Merkeziyetsiz profil yönetimi  
+- **Sui Blockchain**: Merkeziyetsiz profil yönetimi
 - **Sponsored Transactions**: Kullanıcılar için ücretsiz işlemler
 - **Modern UI**: Framer Motion animasyonları
 - **Responsive Design**: Tüm cihazlarda çalışır
@@ -23,12 +23,14 @@ wallink_final/
 ## 🛠️ Kurulum
 
 ### 1. Repository'yi klonlayın
+
 ```bash
 git clone <repo-url>
 cd wallink_final
 ```
 
 ### 2. Backend Kurulumu
+
 ```bash
 cd backend
 npm install
@@ -38,6 +40,7 @@ npm start
 ```
 
 ### 3. Frontend Kurulumu
+
 ```bash
 cd ui
 npm install
@@ -49,6 +52,7 @@ npm run dev
 ## ⚙️ Yapılandırma
 
 ### Backend (.env)
+
 ```bash
 SUI_NETWORK=testnet
 SUI_RPC_URL=https://fullnode.testnet.sui.io:443
@@ -59,6 +63,7 @@ ALLOWED_ORIGINS=http://localhost:5176
 ```
 
 ### Frontend (.env.local)
+
 ```bash
 VITE_ENOKI_API_KEY=your_enoki_api_key_here
 VITE_GOOGLE_CLIENT_ID=your_google_client_id_here
@@ -68,11 +73,13 @@ VITE_REDIRECT_URI=http://localhost:5176
 ## 🔑 API Keys
 
 ### Enoki API Key
+
 1. [Enoki Dashboard](https://enoki.mystenlabs.com) adresine gidin
 2. Yeni proje oluşturun
 3. API key'ini kopyalayın
 
 ### Google OAuth Client ID
+
 1. [Google Cloud Console](https://console.cloud.google.com) adresine gidin
 2. Yeni proje oluşturun veya mevcut projeyi seçin
 3. "APIs & Services" > "Credentials" bölümüne gidin
@@ -93,6 +100,7 @@ VITE_REDIRECT_URI=http://localhost:5176
 ## 🔧 Teknolojiler
 
 ### Frontend
+
 - **React 18** + TypeScript
 - **Vite** - Build tool
 - **Tailwind CSS v4** - Styling
@@ -101,12 +109,14 @@ VITE_REDIRECT_URI=http://localhost:5176
 - **@mysten/enoki** - zkLogin integration
 
 ### Backend
+
 - **Node.js** + Express.js
 - **@mysten/sui.js** - Sui blockchain interaction
 - **CORS** + **Helmet** - Security
 - **Rate limiting** - API protection
 
 ### Blockchain
+
 - **Sui Network** - Testnet
 - **Move Language** - Smart contracts
 - **zkLogin** - Privacy-preserving authentication
@@ -114,6 +124,7 @@ VITE_REDIRECT_URI=http://localhost:5176
 ## 📝 API Endpoints
 
 ### Backend API
+
 - `GET /` - Health check
 - `POST /api/sponsor/create-profile` - Profil oluşturma
 - `POST /api/sponsor/add-link` - Link ekleme
@@ -129,11 +140,13 @@ VITE_REDIRECT_URI=http://localhost:5176
 ## 🐛 Hata Giderme
 
 ### "Google zkLogin wallet bulunamadı"
+
 - Enoki API key'in doğru olduğundan emin olun
 - Google Client ID'nin doğru olduğundan emin olun
 - Network bağlantınızı kontrol edin
 
 ### "Backend bağlantı hatası"
+
 - Backend'in çalışır durumda olduğundan emin olun
 - CORS ayarlarını kontrol edin
 - Port çakışması olup olmadığını kontrol edin
