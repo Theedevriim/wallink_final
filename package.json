@@ -1,13 +1,11 @@
 {
   "name": "wallink-app",
   "version": "1.0.0",
-  "type": "module",
   "scripts": {
-    "start": "node backend/src/server.js",
-    "dev": "nodemon backend/src/server.js",
-    "build": "npm install",
-    "install-backend": "cd backend && npm install",
-    "install-ui": "cd ui && npm install"
+    "start": "node server.js",
+    "test-basic": "node test-server.js",
+    "dev": "nodemon server.js",
+    "build": "npm install"
   },
   "dependencies": {
     "@mysten/sui": "^1.0.0",
